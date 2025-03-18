@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">UNIT CONVERTER</h1>
+  <input type="number" placeholder="Enter number..." id="userInput">
+  <select id="unit">
+    <option value="milesToKm">Miles to Kilometers</option>
+    <option value="kmToMiles">Kilometers to Miles</option>
+    <option value="kgToPounds">Kilograms to Pounds</option>
+    <option value="poundsToKg">Pounds to Kilograms</option>  
+  </select> 
+  <button onclick="convert()">Convert</button>
+  <button onclick="clearInput()">Clear</button>
+  <p class="result-container">Result: <span id="resultElement">0</span></p>
+  
+  <h2>Conversion History</h2>
+  <ul id="history" class="history"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
